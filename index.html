@@ -15,11 +15,12 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
 
-    <link rel="stylesheet" href="./css/style.css" />
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
-    <header class="page-header">
+    <!-- <header class="page-header">
       <div class="container header">
         <a class="logo" href="#" target="_blank" rel="noopener"
           ><img src="./img/logo.png" alt="" width="73px"
@@ -48,19 +49,23 @@
           <a class="link" href="#">ua</a>
         </div>
       </div>
-    </header>
+    </header> -->
     <main>
       <section class="hero">
         <div class="container">
           <div class="photo">
-            <img src="./img/hero.jpg" alt="" width="860" />
+            <img class="photo-img" src="./img/hero.jpg" alt=""  />
           </div>
           <div class="hero-all">
-            <a class="logo hero" href="#" target="_blank" rel="noopener"
-              ><img src="./img/logo.png" alt="" width="148"
-            /></a>
-            <h1 class="hero-title">Beauty <br />Dance Studio</h1>
-            <p class="hero-text">Вінниця</p>
+            <div class="heto-wrap-logo">
+              <a class="logo hero" href="#" target="_blank" rel="noopener"
+                ><img src="./img/logo.png" alt="" width="148"
+              /></a>
+              <div class="hero-wrap-title">
+                <h1 class="hero-title">Beauty <br />Dance Studio</h1>
+                <p class="hero-text">Вінниця</p>
+              </div>
+            </div>
 
             <button class="button-hero" type="button" data-modal-open>
               Про нас

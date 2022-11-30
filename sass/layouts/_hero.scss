@@ -1,0 +1,80 @@
+.hero {
+    background-color: var(--color-header);
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../img/hero);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: left center;
+  }
+  .hero .container {
+   
+    /* background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: left center; */
+  }
+  // .photo img{
+  //   width: 100%;
+  //   @media screen and (min-width: 1200px) {
+  //     width: 860px;
+  //   }
+  // }
+  .photo-img{
+    width: 100%;
+    @media screen and (min-width: 1200px) {
+      width: 860px;
+    }
+  }
+  .hero .container{
+    padding-bottom: 37px;
+
+
+  @media screen and (min-width: 1200px) {    
+      padding-top: 20px;
+      padding-bottom: 20px;
+      display: flex;
+    }   
+  }
+  
+  .hero-all {
+    padding-top: 51px;
+    padding-left: 58px;
+  
+  }
+  .heto-wrap-logo{
+    @media screen and (min-width: 480px) { 
+      display: flex;
+    }
+    @media screen and (min-width: 1200px) { 
+      display: block;
+    }
+  }
+  .logo.hero {
+    margin-bottom: 41px;
+  }
+  .hero-title {
+    width: 696px;
+    display: block;
+    margin-bottom: 27px;
+  
+    color: var(--accent-text-color);
+  
+    font-family: "Roboto";
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1.17;
+  }
+  .hero-text {
+    margin-bottom: 70px;
+    font-family: "Roboto";
+  
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1.17;
+  
+    color: var(--primary-color);
+  }

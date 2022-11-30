@@ -1,0 +1,28 @@
+.button-hero {
+    margin-bottom: 22px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    min-width: 365px;
+  
+    color: var(--text-color);
+    background-color: var(--accent-text-color);
+    border: none;
+    text-align: center;
+  
+    font-family: "Roboto";
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.17;
+  
+    border-radius: 10px;
+  
+    cursor: pointer;
+    transition: background-color var(--time) var(--cubic);
+  }
+  .button-hero:hover,
+  .button-hero:focus {
+    background-color: var(--text-color);
+    color: var(--accent-text-color);
+    transition: background-color var(--time) var(--cubic),
+      color var(--time) var(--cubic);
+  }
