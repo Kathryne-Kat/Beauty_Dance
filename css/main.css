@@ -316,6 +316,60 @@ body {
   font-weight: 600;
 }
 
+.achievement-item {
+  display: block;
+  background-color: var(--color-header);
+  border-radius: 10px;
+  padding-top: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .achievement-item {
+    width: 330px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .achievement-item {
+    width: 350px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .achievement-item {
+    width: 428px;
+  }
+}
+
+.achievement-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .achievement-list {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.achievement-text {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--text-color2);
+  padding-bottom: 30px;
+  border-bottom: 10px solid var(--accent-color);
+}
+
 .section-footer {
   background-color: var(--color-header);
   padding-top: 60px;
