@@ -74,6 +74,8 @@ a {
 .container {
   width: 100%;
   margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 @media screen and (min-width: 1200px) {
   .container {
@@ -84,23 +86,21 @@ a {
 }
 
 body {
-  color: var(--primary-text-color);
+  color: var(--text-color);
   background-color: var(--primary-color);
   font-family: Roboto, sans-serif;
   font-size: 14px;
   /* letter-spacing: 0.03em; */
 }
 
-.button-hero {
-  margin-bottom: 22px;
+.btn {
   padding-top: 12px;
   padding-bottom: 12px;
-  min-width: 365px;
+  min-width: 260px;
   color: var(--text-color);
   background-color: var(--accent-text-color);
   border: none;
   text-align: center;
-  font-family: "Roboto";
   font-weight: 600;
   font-size: 28px;
   line-height: 1.17;
@@ -115,18 +115,29 @@ body {
   color: var(--accent-text-color);
   transition: background-color var(--time) var(--cubic), color var(--time) var(--cubic);
 }
+@media screen and (min-width: 480px) {
+  .button-hero:hover,
+.button-hero:focus {
+    min-width: 347px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .button-hero:hover,
+.button-hero:focus {
+    min-width: 365px;
+  }
+}
 
 .section-title {
-  margin-bottom: 50px;
-  color: var(--title-text-color);
-  font-size: 36px;
-  line-height: 1.2;
+  margin-bottom: 48px;
+  color: var(--text-color);
+  font-size: 40px;
+  line-height: 1.17;
   text-align: center;
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 56px;
 }
 
 .hero {
@@ -135,13 +146,6 @@ body {
   background-repeat: no-repeat;
   background-size: auto;
   background-position: left center;
-}
-
-.hero .container {
-  /* background-image: url(../img/hero.jpg);
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: left center; */
 }
 
 .photo-img {
@@ -154,7 +158,9 @@ body {
 }
 
 .hero .container {
-  padding-bottom: 37px;
+  padding-bottom: 44px;
+  padding-left: 0;
+  padding-right: 0;
 }
 @media screen and (min-width: 1200px) {
   .hero .container {
@@ -165,17 +171,31 @@ body {
 }
 
 .hero-all {
-  padding-top: 51px;
-  padding-left: 58px;
+  padding-top: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+@media screen and (min-width: 768px) {
+  .hero-all {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-all {
+    display: block;
+    padding-top: 51px;
+    padding-left: 58px;
+  }
 }
 
-@media screen and (min-width: 480px) {
-  .heto-wrap-logo {
+@media screen and (min-width: 460px) {
+  .hero-wrap-logo {
     display: flex;
   }
 }
 @media screen and (min-width: 1200px) {
-  .heto-wrap-logo {
+  .hero-wrap-logo {
     display: block;
   }
 }
@@ -184,24 +204,76 @@ body {
   margin-bottom: 41px;
 }
 
+.hero-wrap-title {
+  margin-left: 20px;
+}
+
 .hero-title {
-  width: 696px;
-  display: block;
-  margin-bottom: 27px;
-  color: var(--accent-text-color);
-  font-family: "Roboto";
   font-weight: 600;
-  font-size: 48px;
-  line-height: 1.17;
+  font-size: 38px;
+  line-height: 1.18;
+  color: var(--accent-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    display: block;
+    margin-bottom: 27px;
+    font-size: 48px;
+  }
 }
 
 .hero-text {
-  margin-bottom: 70px;
-  font-family: "Roboto";
+  margin-bottom: 40px;
   font-weight: 600;
-  font-size: 48px;
-  line-height: 1.17;
+  font-size: 38px;
+  line-height: 1.18;
   color: var(--primary-color);
+}
+@media screen and (min-width: 1200px) {
+  .hero-text {
+    margin-bottom: 70px;
+    font-size: 48px;
+  }
+}
+
+.button-hero {
+  display: block;
+  margin-bottom: 22px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 1200px) {
+  .button-hero {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.stile-item {
+  background-color: var(--accent-color);
+  border-radius: 10px;
+  padding-top: 31px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 50px;
+  margin-bottom: 40px;
+}
+
+.stile-item-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+}
+
+.stile-item-list {
+  padding-left: 25px;
+}
+
+.stile-item-list li {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.18;
 }
 
 .section-footer {

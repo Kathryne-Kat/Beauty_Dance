@@ -10,13 +10,13 @@
     background-size: auto;
     background-position: left center;
   }
-  .hero .container {
+  // .hero .container {
    
-    /* background-image: url(../img/hero.jpg);
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: left center; */
-  }
+  //   background-image: url(../img/hero.jpg);
+  //   background-repeat: no-repeat;
+  //   background-size: auto;
+  //   background-position: left center; 
+  // }
   // .photo img{
   //   width: 100%;
   //   @media screen and (min-width: 1200px) {
@@ -25,12 +25,15 @@
   // }
   .photo-img{
     width: 100%;
+   
     @media screen and (min-width: 1200px) {
       width: 860px;
     }
   }
   .hero .container{
-    padding-bottom: 37px;
+    padding-bottom: 44px;
+    padding-left: 0;
+    padding-right: 0;
 
 
   @media screen and (min-width: 1200px) {    
@@ -41,12 +44,27 @@
   }
   
   .hero-all {
-    padding-top: 51px;
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+   
+    
+    @media screen and (min-width: 480px) { 
+      
+    }
+    @media screen and (min-width: 768px) { 
+      display: flex;
+      justify-content: space-around;
+    }
+    @media screen and (min-width: 1200px) { 
+     display: block;
+      padding-top: 51px;
     padding-left: 58px;
+    }
   
   }
-  .heto-wrap-logo{
-    @media screen and (min-width: 480px) { 
+  .hero-wrap-logo{
+    @media screen and (min-width: 460px) { 
       display: flex;
     }
     @media screen and (min-width: 1200px) { 
@@ -56,25 +74,52 @@
   .logo.hero {
     margin-bottom: 41px;
   }
+  .hero-wrap-title{
+    margin-left: 20px;
+    
+  }
   .hero-title {
-    width: 696px;
-    display: block;
-    margin-bottom: 27px;
-  
-    color: var(--accent-text-color);
-  
-    font-family: "Roboto";
     font-weight: 600;
-    font-size: 48px;
-    line-height: 1.17;
+    font-size: 38px;
+    line-height: 1.18;
+    color: var(--accent-text-color);
+
+    @media screen and (min-width: 480px) { 
+      
+    }
+    @media screen and (min-width: 1200px) { 
+      // width: 696px;
+      display: block;
+      margin-bottom: 27px; 
+      font-size: 48px;      
+    }
   }
   .hero-text {
-    margin-bottom: 70px;
-    font-family: "Roboto";
-  
+    margin-bottom: 40px;
     font-weight: 600;
-    font-size: 48px;
-    line-height: 1.17;
-  
+    font-size: 38px;
+    line-height: 1.18;  
     color: var(--primary-color);
+    @media screen and (min-width: 480px) { 
+      
+    }
+    @media screen and (min-width: 1200px) { 
+      margin-bottom: 70px;
+      font-size: 48px;
+    }
+  }
+
+  .button-hero{
+    display: block;
+    margin-bottom: 22px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width: 480px) { 
+      
+    }
+    @media screen and (min-width: 1200px) { 
+      margin-left: 0;
+      margin-right: 0;
+    }
   }
