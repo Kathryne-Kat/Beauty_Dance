@@ -84,6 +84,13 @@ a {
     padding-right: 15px;
   }
 }
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    padding-left: 46px;
+    padding-right: 46px;
+  }
+}
 
 body {
   color: var(--text-color);
@@ -258,6 +265,30 @@ body {
   padding-right: 25px;
   padding-bottom: 50px;
   margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .stile-item {
+    width: 330px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .stile-item {
+    width: 350px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .stile-item {
+    width: 428px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .stile-list {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .stile-item-title {
