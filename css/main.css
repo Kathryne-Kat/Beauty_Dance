@@ -264,6 +264,11 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 1.17;
+  background: var(--primary-color);
+  border-radius: 8px;
+  padding: 4px 0 4px 11px;
+  width: 212px;
+  margin-bottom: 16px;
 }
 
 .stile-item-list {
@@ -274,6 +279,10 @@ body {
   font-weight: 400;
   font-size: 22px;
   line-height: 1.18;
+}
+
+.stile-accsent {
+  font-weight: 600;
 }
 
 .section-footer {
