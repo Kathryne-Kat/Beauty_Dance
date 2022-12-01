@@ -1,75 +1,65 @@
-.section-footer {
-    background-color: var(--color-header);
-    padding-top: 60px;
-    padding-bottom: 60px;
+.section.footer {
+  background-color: var(--color-header);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.social-networks-footer {
+  margin-bottom: 65px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
   }
-//   .container.footer {
-//   }
-  .social-networks-footer {
-    margin-left: 70px;
+}
+
+.social-networks-footer-list {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+.social-networks-item-footer {
+  width: 44px;
+  height: 44px;
+}
+
+.social-networks-item-footer:hover,
+.social-networks-item-footer:focus {
+  cursor: pointer;
+}
+
+.address-nav {
+  margin-top: 20px;
+}
+.contacts.footer .link {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+  line-height: 1.15;
+  color: var(--accent-text-color);
+}
+.contacts.footer > li:first-child {
+  margin-bottom: 11px;
+}
+.contacts.footer > li:last-child {
+  margin-bottom: 112px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
   }
-  
-  .social-networks-footer-list {
-    display: flex;
-    gap: 10px;
-  }
-  .social-networks-item-footer {
-    background-color: rgba(255, 255, 255, 0.1);
-    width: 44px;
-    height: 44px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    flex-basis: calc((100% - 30px) / 4);
-    color: var(--primary-color);
-  
-    transition: background-color var(--time) var(--cubic);
-  }
-  .icon-net {
-    fill: currentColor;
-  }
-  .social-networks-item-footer:hover,
-  .social-networks-item-footer:focus {
-    background-color: var(--accent-text-color);
-    cursor: pointer;
-    transition: background-color var(--time) var(--cubic);
-  }
-  .logo.footer {
-    display: inline-block;
-    padding-bottom: 0;
-    padding-top: 0;
-  }
-  .logo .accent {
-    color: var(--primary-color);
-  }
-  .address-nav {
-    margin-top: 20px;
-  }
-  .contacts.footer .link {
-    font-family: "Roboto";
-    font-size: 20px;
-    line-height: 1.15;
-    color: var(--accent-text-color);
-  }
-  .contacts.footer > li:not(:last-child) {
-    margin-bottom: 9px;
-  }
-  .contacts.footer > li:not(:first-child) {
-    display: block;
-  
-    color: var(--address-color);
-  
-    text-decoration: none;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1.7;
-    transition: color var(--time) var(--cubic);
-  }
-  
-  .address {
-    color: var(--primary-color);
-    text-decoration: none;
-    font-style: normal;
-    line-height: 1.7;
-  }
+}
+
+.address {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-style: normal;
+  line-height: 1.7;
+}
+.button-footer {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
